@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Diagonal background for the #assignment div only */
+        #assignment {
+            background: linear-gradient(165deg, #6b46c1 50%, #f3f1f1 50%);
+        }
+
+        /* Enlarge the heading */
+        h2 {
+            font-size: 4rem;
+        }
+
+        /* Card hover animation */
+        .service-card {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Rotate the entire card (including image) on hover */
+        .service-card:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+<div id="assignment" class="container mx-auto p-6 rounded-md shadow-lg">
+    <h2 class="text-5xl font-bold text-white text-center font-sans mb-6 ">OUR SERVICES</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Service Card 1 -->
+        <div class="bg-white text-center p-6 rounded-lg shadow-md relative service-card">
+            <!-- Image Circle -->
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-purple-700 p-2 rounded-full">
+                <img src="s1.jpg" alt="Service 1" class="w-20 h-20 object-cover rounded-full">
+            </div>
+            <h3 class="mt-10 text-lg font-semibold mb-2">Emergency Plumbing Services</h3>
+            <p class="text-gray-600 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+            <a href="#" class="text-purple-700 font-semibold">EXPLORE THIS SERVICE &gt;</a>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="bg-white text-center p-6 rounded-lg shadow-md relative service-card">
+            <!-- Image Circle -->
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-purple-700 p-2 rounded-full">
+                <img src="s2.jpg" alt="Service 2" class="w-20 h-20 object-cover rounded-full">
+            </div>
+            <h3 class="mt-10 text-lg font-semibold mb-2">Plumbing and Drains</h3>
+            <p class="text-gray-600 mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+            <a href="#" class="text-purple-700 font-semibold">EXPLORE THIS SERVICE &gt;</a>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="bg-white text-center p-6 rounded-lg shadow-md relative service-card">
+            <!-- Image Circle -->
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-purple-700 p-2 rounded-full">
+                <img src="s3.jpeg" alt="Service 3" class="w-20 h-20 object-cover rounded-full">
+            </div>
+            <h3 class="mt-10 text-lg font-semibold mb-2">Water Damage</h3>
+            <p class="text-gray-600 mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+            <a href="#" class="text-purple-700 font-semibold">EXPLORE THIS SERVICE &gt;</a>
+        </div>
+        
+        <!-- Service Card 4 -->
+        <div class="bg-white text-center p-6 rounded-lg shadow-md relative service-card">
+            <!-- Image Circle -->
+            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-purple-700 p-2 rounded-full">
+                <img src="s4.webp" alt="Service 4" class="w-20 h-20 object-cover rounded-full">
+            </div>
+            <h3 class="mt-10 text-lg font-semibold mb-2">Water Heaters</h3>
+            <p class="text-gray-600 mb-4">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+            <a href="#" class="text-purple-700 font-semibold">EXPLORE THIS SERVICE &gt;</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
